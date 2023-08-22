@@ -13,23 +13,19 @@ let secondCard = false;
 
 // Items array
 const items = [
-    {name: "bear", clan: "makwa", image: "bear.png"},
-    {name: "deer", clan: "waawaashkeshi", image: "deer.png"},
-    {name: "eagle", clan: "mgizi", image: "eagle.png"},
-    {name: "fish", clan: "giigoonh", image: "fish.png"},
-    {name: "wolf", clan: "ma'iingan", image: "wolf.png"},
-    {name: "bird", clan: "benaishii", image: "bird.png"},
-    {name: "turtle", clan: "mikinaak", image: "turtle.jpeg"},
-    {name: "beaver", clan: "amik", image: "beaver.png"},
-    {name: "crane", clan: "aajiijak", image: "crane.png"},
-    {name: "loon", clan: "maang", image: "loon.png"},
-    {name: "marten", clan: "waabizheshi", image: "marten.png"},
-    {name: "heron", clan: "shagi", image: "heron.png"},
-    {name: "hawk", clan: "memeskniniisi", image: "hawk.png"},
+    {name: "bear", clan: "nyagwai'", image: "bear.png"},
+    {name: "deer", clan: "neogë'", image: "deer.png"},
+    {name: "wolf", clan: "otá:yö:nih", image: "wolf.png"},
+    {name: "turtle", clan: "ha'no:wa:h", image: "turtle.jpeg"},
+    {name: "beaver", clan: "nöganya'göh", image: "beaver.png"},
+    {name: "heron", clan: "jóäshä'", image: "heron.png"},
+    {name: "snipe", clan: "nö'dzahgwë'", image: "snipe.png"},
+    {name: "hawk", clan: "gaji'da:s", image: "hawk.png"},
 ];
 
-const medicinewheel = [
-    {name: "medicinewheel", image: "medicinewheelsmaller.png"},
+// Items array
+const wampum = [
+    {name: "wampum", image: "wampumsmaller.png"},
 ];
 
 
@@ -95,7 +91,7 @@ const matrixGenerator = (cardValues, size = 4) => {
         */
         gameContainer.innerHTML += `
             <div class="card-container" data-card-value="${cardValues[i].name}">
-                <div class="card-before"><img src="${medicinewheel[0].image}" class="image"></div>
+                <div class="card-before"><img src="${wampum[0].image}" class="image"></div>
                 <div class="card card-after"><p class="card-title m3">${cardValues[i].clan}</p><img src="${cardValues[i].image}" class="image"><p class="card-text m3">${cardValues[i].name}</p></div>
             </div>
             `;

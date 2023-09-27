@@ -33,12 +33,6 @@ const wampum = [
 let seconds = 0,
     minutes = 0;
 
-
-// Initial Moves & Win Count
-let movesCount = 0,
-    winCount = 0;
-
-
 // For Timer
 const timeGenerator = () => {
     seconds += 1;
@@ -52,6 +46,12 @@ const timeGenerator = () => {
     let minutesValue = minutes < 10 ? `0${minutes}` : minutes;
     timeValue.innerHTML = `<span>Time:</span>${minutesValue}:${secondsValue}`;
 };
+
+
+// Initial Moves & Win Count
+let movesCount = 0,
+    winCount = 0;
+    
 
 // Calculate moves
 const movesCounter = () => {

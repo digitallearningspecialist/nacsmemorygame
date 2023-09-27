@@ -12,13 +12,22 @@ body {
     background-size: 50%;
 }
 
+#gamename {
+    text-align: center;
+    font-size: 50px;
+    font-family: "DynaPuff";
+    font-weight: bold;
+    text-shadow: 0 0 10px black;
+    color: white;
+}
+
 .wrapper {
     box-sizing: content-box;
     width: 40em;
     padding: 2.5em 2em;
     background-color: white;
     position: absolute;
-    transform: translate(-50%, -45%);
+    transform: translate(-50%, -46%);
     left: 50%;
     top: 50%;
     border-radius: 0.6em;
@@ -81,15 +90,16 @@ body {
     transform: rotateY(0deg);
 }
 
+
 .controls-container {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: 112%;
-    background-color: mediumpurple;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 112%;
+        background-color: mediumpurple;
 }
 
 button {
@@ -100,11 +110,27 @@ button {
 }
 
 #stop {
-    font-size: 1.1em;
-    display: block;
-    margin: 1.1em auto 0 auto;
-    background-color: black;
+    font-size: 24px;
+    display: flexbox;
+    margin-top: -1em;
+    margin-bottom: 0.5em;
+    background-color: mediumpurple;
+    border: 2.5px solid #000000;
     color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+#start {
+    font-size: 50px;
+    display: flexbox;
+    margin-top: -10em;
+    margin-bottom: 0.5em;
+    padding: 80px 120px;
+    background-color: white;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 525;
 }
 
 .controls-container button {
@@ -114,6 +140,17 @@ button {
 
 .hide {
     display: none;
+}
+
+#moves-count {
+    margin-top: -3.9em;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+#time {
+    font-size: 24px;
+    margin-right: 10px;
 }
 
 #result {
